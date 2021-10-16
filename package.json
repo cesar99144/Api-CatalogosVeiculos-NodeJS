@@ -1,0 +1,27 @@
+{
+  "name": "Api-CatalogosVeiculos-NodeJS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesar99144/Api-CatalogosVeiculos-NodeJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cesar99144/Api-CatalogosVeiculos-NodeJS/issues"
+  },
+  "homepage": "https://github.com/cesar99144/Api-CatalogosVeiculos-NodeJS#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.95.11",
+    "mysql2": "^2.3.2",
+    "nodemon": "^2.0.13"
+  }
+}
