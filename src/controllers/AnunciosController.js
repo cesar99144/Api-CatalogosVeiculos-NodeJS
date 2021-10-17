@@ -31,7 +31,7 @@ class AnunciosController{
         const statusBusca = "Ativo";
         const destaqueAnuncio = "Sim";
 
-        database.select("tituloAnuncio", "primeiraImagem").table("veiculos").where({status: statusBusca, destaque: destaqueAnuncio}).then(anuncios => {
+        database.select("idVeiculo","tituloAnuncio", "primeiraImagem").table("veiculos").where({status: statusBusca, destaque: destaqueAnuncio}).then(anuncios => {
             response.json(anuncios)
         }).catch(error => {
             console.log(error)
