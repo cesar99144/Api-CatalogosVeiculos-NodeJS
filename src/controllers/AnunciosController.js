@@ -31,9 +31,19 @@ class AnunciosController{
         const statusBusca = "Ativo";
         const destaqueAnuncio = "Sim";
 
-        database.select("idVeiculo","tituloAnuncio", "primeiraImagem").table("veiculos").where({status: statusBusca, destaque: destaqueAnuncio}).then(anuncios => {
+        database.select("*").table("veiculos").where({status: statusBusca, destaque: destaqueAnuncio}).then(anuncios => {
             response.json(anuncios)
         }).catch(error => {
+            console.log(error)
+        })
+    }
+
+    vizualizarVeiculo(request, response){
+        const idRequest = request.params
+        const idVeiculo = idRequest.idVeiculo;
+        database.select("*").table("veiculos").where({idVeiculo:idVeiculo}).then(veiculo => {
+            response.json(veiculo)
+        }).catch(error =>{
             console.log(error)
         })
     }
