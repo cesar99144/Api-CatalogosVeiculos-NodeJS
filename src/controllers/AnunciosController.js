@@ -47,6 +47,43 @@ class AnunciosController{
             console.log(error)
         })
     }
+
+    filtroPesquisa(request, response){
+        // const tipoVeiculo = "Carro"
+        // const ano = "2014"
+
+        const requestDados = request.params
+        const tipoVeiculo = requestDados.tipoveiculo;
+        const ano = requestDados.ano;
+        const marca = requestDados.marca;
+
+        database.select("*").table("veiculos").where({tipoVeiculo:tipoVeiculo, ano:ano}).then(veiculo =>{
+            response.json(veiculo)
+        }).catch(error =>{
+            console.log(error)
+        })
+    }
+
+    marcasdisponiveis(request, response){
+
+        database.select("idVeiculo","marca").table("veiculos").then(veiculo =>{
+            response.json(veiculo)
+        }).catch(error => {
+            console.log(error)
+        })
+    }
+
+    pesquisapornome(request, response){
+
+        const requestDados = request.params;
+        const nome = requestDados.nome;
+
+        database.select("*").table("veiculos").where({tituloAnuncio:nome}).then(veiculo =>{
+            response.json(veiculo)
+        }).catch(error => {
+            console.log(error)
+        })
+    }
 }
 
 module.exports = new AnunciosController()
