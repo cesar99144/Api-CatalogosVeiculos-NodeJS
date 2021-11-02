@@ -9,7 +9,7 @@ Api em node Js para o <a href="https://github.com/cesar99144/AppCatalogoVeiculos
     <li>nodemon</li>
     <li>mysql2</li>
     <li>knex</li>
-    <li>cors</li><br>
+    <li>cors</li>
    
 </ul>
 
@@ -17,7 +17,7 @@ Api em node Js para o <a href="https://github.com/cesar99144/AppCatalogoVeiculos
     <ul>
       <li> Clonar este repositório para um diretório de sua preferência</li>
       <li> Navegar até a pasta raiz do projeto e executar <code>node index</code></li>
-      <li> Se tudo ocorrer bem a api será iniciado de imediato, e ficará disponível no endereço <code>http://localhost:4000/</code></li> <br>
+      <li> Se tudo ocorrer bem a api será iniciado de imediato, e ficará disponível no endereço <code>http://localhost:4000/</code></li>
     </ul>
 
 
