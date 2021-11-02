@@ -55,7 +55,6 @@ class AnunciosController{
         const requestDados = request.params
         const tipoVeiculo = requestDados.tipoveiculo;
         const ano = requestDados.ano;
-        const marca = requestDados.marca;
 
         database.select("*").table("veiculos").where({tipoVeiculo:tipoVeiculo, ano:ano}).then(veiculo =>{
             response.json(veiculo)
