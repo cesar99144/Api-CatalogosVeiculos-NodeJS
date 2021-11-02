@@ -20,8 +20,9 @@ Api em node Js para o <a href="https://github.com/cesar99144/AppCatalogoVeiculos
       <li> Se tudo ocorrer bem a api será iniciado de imediato, e ficará disponível no endereço <code>http://localhost:4000/</code></li> <br>
     </ul>
 
+
+<h3>Algumas rotas da api</h3>
 <blockquote>
-    <h3>Algumas rotas da api</h3>
     <ul>
       <li>/destaques</li> (Retorna o json dos anúncios em destaque)
       <li>/carros</li> (Retorna o json de todos carros)
