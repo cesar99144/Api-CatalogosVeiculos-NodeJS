@@ -24,7 +24,7 @@ Api em node Js para o <a href="https://github.com/cesar99144/AppCatalogoVeiculos
 <h3>Algumas rotas da api</h3>
 <blockquote>
     <ul>
-      <li><code>/destaques</code></li> (Retorna o json dos anúncios em destaque)
+      <li><code>/destaques</code> (Retorna o json dos anúncios em destaque)</li> 
       <li><code>/carros</code></li> (Retorna o json de todos carros)
       <li><code>/motos</code></li> (Retorna o json de todos carros)
       <li><code>/veiculo/:idVeiculo</code></li> (Vizualizar dados de um veículo específico)
